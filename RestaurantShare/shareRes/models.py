@@ -6,7 +6,7 @@ class Category(models.Model):
     category_name = models.CharField(max_length = 100)
 
 class Restaurant(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.SET_DEFAULT, default=3)
+    category = models.ForeignKey(Category, on_delete=models.SET_DEFAULT, default=9)
     restaurant_name = models.CharField(max_length = 100)
     restaurant_link = models.CharField(max_length = 500)
     restaurant_content = models.TextField()
